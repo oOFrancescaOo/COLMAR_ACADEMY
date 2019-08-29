@@ -1,5 +1,10 @@
 html {
   font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main {
+  font-size: 1rem;
 }
 
 .container {
@@ -12,6 +17,12 @@ html {
   display: flex;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+
 h1 {
   font-size: 2.5rem;
   padding-bottom: 1.5rem;
@@ -19,7 +30,11 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 li {
@@ -29,6 +44,23 @@ li {
 a {
   text-decoration: none;
   color: black;
+}
+
+a:hover {
+  color: #4D62E8;
+}
+
+p, .info a {
+  padding-top: 0.5rem;
+}
+
+cite {
+  font-style: italic;
+  padding-top: 0.25rem;
+}
+
+strong {
+  font-weight: 600;
 }
 
 main {
@@ -45,6 +77,11 @@ main {
   display: flex;
   align-items: center;
   padding-left: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.logo a {
+  padding-left: 1rem;
 }
 
 nav {
@@ -65,7 +102,7 @@ nav {
 /* BANNER */
 
 .banner {
-  background-color: grey;
+  background-color: #E8C44D;
   max-width: 100%;
   position: relative;
   top: 4rem;
@@ -82,6 +119,7 @@ section, .section {
 
 .main-img img {
   max-width: 100%;
+  margin-bottom: 2rem;
 }
 
 .side {
@@ -101,12 +139,22 @@ section, .section {
   padding: 0.5rem 0px;
   width: 100%;
   text-align: center;
+  margin: 1.5rem 0px;
 }
 
 /* SECTION CAMPUS */
 
+#campus .articles {
+  justify-content: space-between;
+  border-left: 1px solid #4D62E8;
+}
+
 .article {
-  padding-bottom: 1rem;
+  padding: 1rem;
+}
+
+.article:hover, .button:hover {
+  background-color: #4D62E8;
 }
 
 .article-img {
@@ -125,10 +173,14 @@ section, .section {
   justify-content: center;
 }
 
+.info a {
+  color: #14279C;
+}
+
 /* SECTION COURSES */
 
 #courses {
-  background-color: gray;
+  background-color: #FFDD6E;
 }
 
 section h2 {
@@ -157,6 +209,12 @@ section h2 {
 
 .course-info {
   padding: 1rem;
+}
+
+/* EXHIBIT */
+
+#exhibit .article {
+  padding-bottom: 1rem;
 }
 
 /* FOOTER */
