@@ -1,0 +1,94 @@
+html {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0px 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+li {
+  padding-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+
+/*NAV */
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.nav-bar {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  height: 4rem;
+  width: 960px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li:last-child {
+  padding-right: 1.5rem;
+}
+
+/* BANNER */
+
+.banner {
+  background-color: grey;
+  max-width: 100%;
+  position: relative;
+  top: 4rem;
+}
+
+.banner .container {
+  padding: 2rem 0px;
+}
+
+.main-img {
+  min-width: 60%;
+  margin: 0px 1.5rem;
+}
+
+.main-img img {
+  max-width: 100%;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0px;
+  width: 100%;
+  text-align: center;
+}
