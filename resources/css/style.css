@@ -3,9 +3,9 @@ html {
 }
 
 .container {
-  max-width: 960px;
+  width: 960px;
+  max-width: 100%;
   margin: 0px auto;
-  padding: 0px 1.5rem;
 }
 
 .flex {
@@ -31,6 +31,12 @@ a {
   color: black;
 }
 
+main {
+  position: relative;
+  top: 4rem;
+  padding-bottom: 2rem;
+}
+
 /* HEADER */
 
 /*NAV */
@@ -41,18 +47,19 @@ a {
   padding-left: 1.5rem;
 }
 
+nav {
+  margin-right: 1.5rem;
+}
+
 .nav-bar {
   position: fixed;
   z-index: 10;
   background-color: white;
   height: 4rem;
   width: 960px;
+  max-width: 100%;
   align-items: center;
   justify-content: space-between;
-}
-
-nav ul li:last-child {
-  padding-right: 1.5rem;
 }
 
 /* BANNER */
@@ -64,12 +71,12 @@ nav ul li:last-child {
   top: 4rem;
 }
 
-.banner .container {
+section, .section {
   padding: 2rem 0px;
 }
 
 .main-img {
-  min-width: 60%;
+  width: 60%;
   margin: 0px 1.5rem;
 }
 
@@ -77,12 +84,15 @@ nav ul li:last-child {
   max-width: 100%;
 }
 
-.slogan {
-  display: flex;
+.side {
+  width: 40%;
   flex-direction: column;
+  margin-right: 1.5rem;
+}
+
+.slogan {
   align-items: flex-start;
   justify-content: center;
-  margin-right: 1.5rem;
 }
 
 .button {
@@ -91,4 +101,82 @@ nav ul li:last-child {
   padding: 0.5rem 0px;
   width: 100%;
   text-align: center;
+}
+
+/* SECTION CAMPUS */
+
+.article {
+  padding-bottom: 1rem;
+}
+
+.article-img {
+  width: 35%;
+}
+
+.article img {
+  max-width: 100%;
+}
+
+.info {
+  width: 65%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* SECTION COURSES */
+
+#courses {
+  background-color: gray;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.courses {
+  padding: 2rem 4.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course {
+  background-color: white;
+  width: 32%;
+  margin-bottom: 1rem;
+}
+
+.course img {
+  max-width: 100%
+}
+
+.course-img {
+  height: auto;
+}
+
+.course-info {
+  padding: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid black;
+  width: 100%;
+  font-size: 0.75rem;
+  margin: 2rem 0;
+}
+
+.footer {
+  padding-top: 2rem;
+  justify-content: space-between;
+}
+
+.footer p {
+  margin-left:1.5rem;
+}
+
+.footer ul {
+  margin-right: 1.5rem;
 }
