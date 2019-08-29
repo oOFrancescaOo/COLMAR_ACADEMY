@@ -56,7 +56,7 @@ p, .info a {
 
 cite {
   font-style: italic;
-  padding-top: 0.25rem;
+  font-size: 0.75rem;
 }
 
 strong {
@@ -81,7 +81,7 @@ main {
 }
 
 .logo a {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 nav {
@@ -119,7 +119,6 @@ section, .section {
 
 .main-img img {
   max-width: 100%;
-  margin-bottom: 2rem;
 }
 
 .side {
@@ -144,9 +143,22 @@ section, .section {
 
 /* SECTION CAMPUS */
 
+section #campus {
+  padding: 1rem 0px;
+}
+
 #campus .articles {
   justify-content: space-between;
   border-left: 1px solid #4D62E8;
+}
+
+#campus .main-img img {
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+#campus h2 {
+  text-align: left;
 }
 
 .article {
@@ -217,6 +229,15 @@ section h2 {
   padding-bottom: 1rem;
 }
 
+.exhibit {
+  padding-top: 1rem;
+}
+
+.main-img video {
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 /* FOOTER */
 
 footer {
@@ -227,7 +248,7 @@ footer {
 }
 
 .footer {
-  padding-top: 2rem;
+  padding-top: 1rem;
   justify-content: space-between;
 }
 
