@@ -5,19 +5,12 @@ html {
 
 main {
   font-size: 1rem;
+  position: relative;
+  top: 4rem;
+  padding-bottom: 2rem;
 }
 
-.container {
-  width: 960px;
-  max-width: 100%;
-  margin: 0px auto;
-}
-
-.flex {
-  display: flex;
-}
-
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .button {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
@@ -57,16 +50,45 @@ p, .info a {
 cite {
   font-style: italic;
   font-size: 0.75rem;
+  float: right;
+  padding-top: 0.5rem;
 }
 
 strong {
   font-weight: 600;
 }
 
-main {
-  position: relative;
-  top: 4rem;
-  padding-bottom: 2rem;
+.container {
+  width: 960px;
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inherit;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 /* HEADER */
@@ -98,6 +120,20 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 600px) {
+
+  nav.mobile {
+    width: 100%;
+  }
+
+  nav ul {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 
 /* BANNER */
 
@@ -139,6 +175,38 @@ section, .section {
   width: 100%;
   text-align: center;
   margin: 1.5rem 0px;
+  transition: all 0.25s ease-out;
+}
+
+.button:hover {
+  background-color: #4D62E8;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .banner .container {
+    width: 100%;
+  }
+
+  .banner .main-img {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .banner .section {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .side {
+    width: auto;
+    margin: 1rem;
+  }
+
+  .button {
+    padding: 1rem 0px;
+  }
+
 }
 
 /* SECTION CAMPUS */
@@ -165,8 +233,10 @@ section #campus {
   padding: 1rem;
 }
 
-.article:hover, .button:hover {
+.article:hover {
   background-color: #4D62E8;
+  color: white;
+  transition: background-color 0.5s ease-in;
 }
 
 .article-img {
@@ -186,7 +256,28 @@ section #campus {
 }
 
 .info a {
-  color: #14279C;
+  color: #E8C44D;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #campus .articles {
+    border: none;
+  }
+
+  #campus .main-img {
+    display: none;
+  }
+
+  #campus .article {
+    flex-direction: column;
+    padding: 0px 0px 1.5rem 0px;
+  }
+
+  #campus .article-img {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
 }
 
 /* SECTION COURSES */
@@ -209,6 +300,14 @@ section h2 {
   background-color: white;
   width: 32%;
   margin-bottom: 1rem;
+  transition: all 0.25s ease-out;
+}
+
+.course:hover {
+  color: #4D62E8;
+  -webkit-box-shadow: 11px 10px 26px -11px rgba(156,128,36,1);
+  -moz-box-shadow: 11px 10px 26px -11px rgba(156,128,36,1);
+  box-shadow: 11px 10px 26px -11px rgba(156,128,36,1);
 }
 
 .course img {
@@ -221,6 +320,21 @@ section h2 {
 
 .course-info {
   padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #courses {
+    background-color: white;
+    padding: 2rem 1rem;
+  }
+
+  #courses a h3 {
+    padding: 1rem;
+    background-color: #FFDD6E;
+    margin: 0.5rem 0px;
+  }
+
 }
 
 /* EXHIBIT */
@@ -236,6 +350,18 @@ section h2 {
 .main-img video {
   padding-top: 1rem;
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #exhibit .article {
+    display: none;
+  }
+
+  #exhibit .main-img {
+    width: 100%;
+    margin: 0px;
+  }
 }
 
 /* FOOTER */
