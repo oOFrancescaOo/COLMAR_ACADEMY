@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-bottom: 0.5rem;
 }
 
@@ -217,7 +217,7 @@ section #campus {
 
 #campus .articles {
   justify-content: space-between;
-  border-left: 1px solid #4D62E8;
+  border-left: 1px solid #FFDD6E;
 }
 
 #campus .main-img img {
@@ -234,8 +234,7 @@ section #campus {
 }
 
 .article:hover {
-  background-color: #4D62E8;
-  color: white;
+  background-color: #FFDD6E;
   transition: background-color 0.5s ease-in;
 }
 
@@ -256,17 +255,13 @@ section #campus {
 }
 
 .info a {
-  color: #E8C44D;
+  color: #4D62E8;
 }
 
 @media only screen and (max-width: 600px) {
 
   #campus .articles {
     border: none;
-  }
-
-  #campus .main-img {
-    display: none;
   }
 
   #campus .article {
@@ -353,10 +348,6 @@ section h2 {
 }
 
 @media only screen and (max-width: 600px) {
-
-  #exhibit .article {
-    display: none;
-  }
 
   #exhibit .main-img {
     width: 100%;
